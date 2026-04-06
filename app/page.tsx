@@ -359,11 +359,11 @@ function ProofModal({
             </div>
 
             <div className="grid gap-0 lg:grid-cols-[1.15fr_0.85fr]">
-              <div className="flex min-h-[420px] items-center justify-center bg-white/[0.03] p-4">
+              <div className="flex min-h-[420px] items-center justify-center bg-white p-4">
                 <img
                   src={item.image}
                   alt={item.title}
-                  className={`max-h-[72vh] w-full rounded-2xl bg-white ${
+                  className={`max-h-[72vh] w-full rounded-2xl ${
                     item.fit === "contain" ? "object-contain" : "object-cover"
                   }`}
                 />
@@ -551,8 +551,8 @@ export default function Home() {
       <section id="proof" className="mx-auto max-w-7xl px-6 py-20">
         <SectionHeading
           eyebrow="Proof"
-          title="The section that changes credibility."
-          description="Claims are easy. Evidence is what makes a portfolio serious. Click any item below to open the full document view."
+          title="Documents, recognition, and hard evidence."
+          description="Click any card to open the full proof view."
         />
 
         <div className="grid gap-8 lg:grid-cols-3">
@@ -577,11 +577,11 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="flex h-[420px] items-center justify-center bg-black/20 p-4">
+                <div className="flex h-[420px] items-center justify-center bg-white p-4">
                   <img
                     src={item.image}
                     alt={item.title}
-                    className={`h-full w-full rounded-2xl bg-white transition duration-500 group-hover:scale-[1.015] ${
+                    className={`max-h-full w-full rounded-2xl transition duration-500 group-hover:scale-[1.015] ${
                       item.fit === "contain" ? "object-contain" : "object-cover"
                     }`}
                   />
@@ -601,22 +601,6 @@ export default function Home() {
               </div>
             </motion.button>
           ))}
-        </div>
-
-        <div className="mt-10 rounded-[2rem] border border-white/10 bg-gradient-to-r from-white/[0.04] to-white/[0.02] p-8 shadow-[0_0_80px_rgba(255,255,255,0.02)]">
-          <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
-            <div>
-              <p className="text-xs uppercase tracking-[0.28em] text-white/40">Why this section matters</p>
-              <h3 className="mt-4 text-3xl font-semibold md:text-4xl">
-                Proof turns confidence into credibility.
-              </h3>
-            </div>
-            <p className="text-lg leading-8 text-white/62">
-              A lot of student sites are built on claims that nobody can verify. This one is stronger
-              because it includes formal recognition, official documentation, and evidence that the work
-              actually happened in real environments. That changes how the whole portfolio is perceived.
-            </p>
-          </div>
         </div>
       </section>
 
