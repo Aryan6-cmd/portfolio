@@ -82,6 +82,12 @@ const proofItems = [
     fit: "contain",
     text: "Verification of MyHealthVault internship work at Manorama Infosolutions in a real healthcare technology environment.",
   },
+  {
+  title: "Government Recognition — BMC Robotics Session",
+  description:
+    "Official acknowledgment from Brihanmumbai Municipal Corporation (Education Department) for delivering a large-scale robotics session impacting students across multiple schools.",
+  image: "thankyouletter.png",
+}
 ];
 
 const stats = [
