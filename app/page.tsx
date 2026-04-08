@@ -2,6 +2,7 @@
 
 import { AnimatePresence, motion, useScroll, useTransform } from "framer-motion";
 import { useEffect, useMemo, useState } from "react";
+import ChatWidget from "./components/ChatWidget";
 
 type ImageItem = {
   src: string;
@@ -619,6 +620,7 @@ export default function Home() {
         </div>
       </section>
 
+      <ChatWidget />
       <ProofModal item={selectedProof} onClose={() => setSelectedProof(null)} />
     </main>
   );
